@@ -4,6 +4,7 @@ import Home from "./Components/Home";
 import Coding from "./Components/Main/Coding";
 import Courses from "./Components/Main/Courses";
 import Footer from "./Components/Footer";
+import CartPage from "./Components/Main/CartPage";
 import "./App.css"
 
 const App = () => {
@@ -14,6 +15,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/coding" element={<Coding />} />
           <Route path="/courses" element={<Courses />} />
+          <Route path="/cart" element={<CartPage />} />
         </Routes>
         <Footer />
       </div>

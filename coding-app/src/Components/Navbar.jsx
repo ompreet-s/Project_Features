@@ -22,15 +22,15 @@ const dropdownData = [
     items: ["For Recruiters", "For Colleges", "For Developers"],
   },
   {
-    label: "Resources",
-    items: ["Blogs", "Webinars", "Guides"],
+    label: "About Us",
+    items: ["Portfolio", "Contact us"],
   },
 ];
 
-const Navbar = () => {
+const Navbar = ({ onStudentLoginClick }) => {
   const [openIndex, setOpenIndex] = useState(null);
   const navigate = useNavigate();
-  
+
   return (
     <nav className="bg-white text-[#2d2d2d] px-6 py-4 flex justify-between items-center shadow">
       
@@ -39,7 +39,6 @@ const Navbar = () => {
         <span className="text-black">CodeBridge</span>
       </div>
 
-    
       <div className="hidden md:flex items-center space-x-6 text-sm font-medium text-gray-700">
         {dropdownData.map((menu, index) => (
           <div
@@ -67,15 +66,25 @@ const Navbar = () => {
             )}
           </div>
         ))}
-        <a href="#" className="hover:text-black">Pricing</a>
       </div>
 
-      
       <div className="flex items-center space-x-4 text-sm text-gray-700">
         <a href="#" className="hover:text-black">For Recruiters</a>
         <span className="hidden md:inline">|</span>
-        <a href="#" className="hover:text-black">Log In</a>
-        <button onClick={() => navigate("/coding")} className="bg-black text-white px-4 py-1 rounded hover:bg-gray-800 font-semibold">
+        <a
+          href="#"
+          onClick={(e) => {
+            e.preventDefault();
+            onStudentLoginClick(); // call the passed prop
+          }}
+          className="hover:text-black"
+        >
+          Log In
+        </a>
+        <button
+          onClick={() => navigate("/coding")}
+          className="bg-black text-white px-4 py-1 rounded hover:bg-gray-800 font-semibold"
+        >
           Get Started
         </button>
       </div>
