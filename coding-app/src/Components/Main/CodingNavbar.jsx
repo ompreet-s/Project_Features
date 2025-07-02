@@ -1,51 +1,49 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { FaHome } from 'react-icons/fa';
-import Login from './Login'; // import here
+import Login from './Login';
 
 const Navbar = () => {
-  const navigate = useNavigate();
   const [showLogin, setShowLogin] = useState(false);
 
   return (
     <>
       <nav className="bg-[#2d3150] text-white px-10 py-3 flex justify-between items-center">
-        <div className="flex items-center space-x-6">
-          <button
-            onClick={() => navigate("/")}
-            className="flex items-center gap-1 hover:text-orange-400"
-          >
-            <FaHome />
-            <span className="text-sm">Home</span>
+        <ul className="flex items-center space-x-6">
+         
+          <li>
+            <Link to="/" className="flex items-center gap-1 hover:text-orange-400 text-xl">
+              <FaHome />
+              <span className='text-md'>Home</span>
+            </Link>
+          </li>
+
+         
+          <li>
+            <Link to="/coding" className="hover:text-orange-400">COMPETITION</Link>
+          </li>
+
+        
+          <li>
+            <Link to="/courses" className="hover:text-orange-400">COURSES</Link>
+          </li>
+
+          <li>
+            <Link to="/learning" className="hover:text-orange-400">LEARNING</Link>
+          </li>
+        </ul>
+
+
+        <div>
+          
+          <button className="list-none">
+            <a href="#" onClick={() => setShowLogin(true)} className="hover:text-orange-400 hover:bg-indigo-950 border-orange-400 px-7 py-2 rounded-xl border-2">LOGIN</a>
           </button>
-
-          <a href="#">COMPETITION</a>
-
-          <button
-            onClick={() => navigate("/courses")}
-            className="hover:text-orange-400"
-          >
-            COURSES
-          </button>
-
-          <button onClick={() => navigate("/learning")} className="hover:text-orange-400">
-          LEARNING
-        </button>
-        </div>
-
-        <div className="flex space-x-4 items-center">
-          <input
-            type="text"
-            placeholder="Search developers, problems, etc"
-            className="bg-[#424569] px-2 py-1 text-sm text-white rounded"
-          />
-          <a href="#" onClick={() => setShowLogin(true)}>LOGIN</a>
         </div>
       </nav>
 
-      {showLogin && (
-        <Login onClose={() => setShowLogin(false)} />
-      )}
+
+      {showLogin && <Login onClose={() => setShowLogin(false)} />}
     </>
   );
 };

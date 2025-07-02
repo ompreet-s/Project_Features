@@ -7,7 +7,7 @@ const CourseCard = ({ course, onEnroll }) => {
       <h3 className="text-lg font-bold mt-2">{course.title}</h3>
       <p className="text-gray-600 text-sm">{course.description}</p>
       <p className="text-blue-700 font-semibold my-1">₹{course.price}</p>
-      <button onClick={() => onEnroll(course)} className="bg-blue-600 text-white w-full mt-2 py-2 rounded">
+      <button onClick={() => onEnroll(course)} className="bg-blue-600 text-white w-full mt-2 py-2 rounded cursor-pointer">
         Enroll
       </button>
     </div>

@@ -26,7 +26,7 @@ const UsersSection = () => {
     <div className="px-30 py-10 bg-white">
       <h2 className="text-2xl font-bold text-gray-900 mb-8">Who's using CodeBridge?</h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-3 gap-6">
         {usersData.map((user, index) => (
           <div key={index} className="flex justify-between items-center border rounded-xl p-4 hover:shadow-lg transition">
             <div className="max-w-[60%]">

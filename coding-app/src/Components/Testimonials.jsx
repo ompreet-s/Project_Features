@@ -29,7 +29,7 @@ const Testimonials = () => {
         <a href="#" className="underline font-medium">Hundreds of reviews</a> showcase why users trust CodeBridge.
       </p>
 
-      <div className="flex justify-end space-x-3 mb-6">
+      <div className="flex justify-end gap-3 mb-6">
         <button onClick={() => handleScroll("left")} className="w-10 h-10 rounded-full border flex items-center justify-center hover:bg-gray-100">
           <FaArrowLeft />
         </button>

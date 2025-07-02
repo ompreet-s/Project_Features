@@ -28,12 +28,12 @@ const Hackthon = () => {
         Hackathons, Programming Challenges, and Coding Competitions
       </h2>
 
-      {/* Tabs */}
+      
       <div className="flex items-center space-x-6 border-b pb-2 mb-6">
         {tabs.map((tab) => (
           <button
             key={tab.name}
-            className={`relative pb-1 font-medium ${
+            className={`relative pb-1 font-medium cursor-pointer ${
               activeTab === tab.name
                 ? "text-blue-600 border-b-2 border-blue-600"
                 : "text-gray-600 hover:text-blue-600"

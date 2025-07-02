@@ -6,6 +6,7 @@ import Testimonials from "./Testimonials";
 import Collaborate from "./Collaborate";
 import Feedback from "./Feedback";
 import StudentLoginModal from './StudentLogin';
+import Recruiter from './Recruiter';
 
 const Home = () => {
   const [showStudentModal, setShowStudentModal] = useState(false);
@@ -17,6 +18,7 @@ const Home = () => {
         onStudentClick={() => setShowStudentModal(true)}
       />
       <UsersSection />
+      <Recruiter/>
       <Testimonials />
       <Collaborate />
       <Feedback />

@@ -1,5 +1,3 @@
-// hackathonData.js
-
 export const liveChallenges = [
   {
     id: 1,
@@ -8,7 +6,7 @@ export const liveChallenges = [
     title: "Cepheid Hiring Challenge 2025",
     endTime: "2025-07-03T23:59:59",
     participants: null,
-    image: "/assets/one.png",
+    image: "https://media.hackerearth.com/media/companies/f9bb267-Cepheid_logo.jpg",
   },
   {
     id: 2,
@@ -17,7 +15,7 @@ export const liveChallenges = [
     title: "Lyzr AI Architect Challenge",
     endTime: "2025-07-04T22:00:00",
     participants: 1579,
-    image: "/assets/two.png",
+    image: "https://scontent.fbbi2-3.fna.fbcdn.net/v/t39.30808-6/511983213_720676190556867_1460115161020503172_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=BZ0DAuDrf4YQ7kNvwFgCc6s&_nc_oc=AdltWcURey79QYTlGPJONqGIRji1nHVWmN4iHHtOUPAyHNmMia3ZcpVgFpoIEfSAXRQb3_0gne98uHoRTtjg7IBT&_nc_zt=23&_nc_ht=scontent.fbbi2-3.fna&_nc_gid=-VufX9NmJm9NFjMUVHCQ2A&oh=00_AfPUm8Or5phgpLV2P5j1QyFzh8K5mCyhnGwrlHCkyo-QFw&oe=686B2E9A",
   },
   {
     id: 3,
@@ -26,7 +24,7 @@ export const liveChallenges = [
     title: "NextGen IoT Innovation Challenge",
     endTime: "2025-07-06T15:30:00",
     participants: 1239,
-    image: "https://via.placeholder.com/300x180?text=Intel+IoT",
+    image: "https://d112y698adiu2z.cloudfront.net/photos/production/challenge_photos/000/697/683/datas/full_width.jpg",
   },
   {
     id: 4,
@@ -35,7 +33,7 @@ export const liveChallenges = [
     title: "Google Cloud Hiring Sprint",
     endTime: "2025-07-07T10:00:00",
     participants: null,
-    image: "https://via.placeholder.com/300x180?text=Google+Cloud",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0_qmBNPyGqUcc2VyTAkFLMKQpYWDBV8OMjA&s",
   },
   {
     id: 5,
@@ -44,7 +42,7 @@ export const liveChallenges = [
     title: "AWS Lambda Innovators",
     endTime: "2025-07-03T23:00:00",
     participants: 1020,
-    image: "https://via.placeholder.com/300x180?text=AWS+Hack",
+    image: "https://i.ytimg.com/vi/Pw1byv7WTkI/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDYEI_d9JMwcu09EgprPFMPYxjO5A",
   },
   {
     id: 6,
@@ -53,7 +51,7 @@ export const liveChallenges = [
     title: "Streaming Optimization Challenge",
     endTime: "2025-07-05T12:00:00",
     participants: 876,
-    image: "https://via.placeholder.com/300x180?text=Netflix+Hack",
+    image: "https://media.licdn.com/dms/image/v2/D4D22AQHY5fRUeV_qhQ/feedshare-shrink_800/feedshare-shrink_800/0/1728381693920?e=2147483647&v=beta&t=0swTksZznM9vA1mqOg9MIFdbIdJFL1hdojyjh-2_GbM",
   },
   {
     id: 7,
@@ -62,7 +60,7 @@ export const liveChallenges = [
     title: "Creative Cloud Code Hunt",
     endTime: "2025-07-07T16:30:00",
     participants: null,
-    image: "https://via.placeholder.com/300x180?text=Adobe+Hiring",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH7A3_5CbhEpc0DU9woaEayLa2db4-sTTVyg&s",
   }
 ];
 
@@ -74,7 +72,7 @@ export const upcomingChallenges = [
     title: "Quantum Code Lab 2025",
     startTime: "2025-07-10T08:00:00",
     participants: 1000,
-    image: "https://via.placeholder.com/300x180?text=IBM+Quantum",
+    image: "https://cdn.dorahacks.io/static/files/1966f1a038fc90a0a71e16d41a4b7749.png",
   },
   {
     id: 9,
@@ -83,7 +81,7 @@ export const upcomingChallenges = [
     title: "Music ML Jam 2025",
     startTime: "2025-07-12T18:00:00",
     participants: 690,
-    image: "https://via.placeholder.com/300x180?text=Spotify+ML",
+    image: "https://d8it4huxumps7.cloudfront.net/lambda-pdfs/opportunity-bannerImages/1738149320.png",
   },
   {
     id: 10,
@@ -92,7 +90,7 @@ export const upcomingChallenges = [
     title: "Snap AR Lens Dev Sprint",
     startTime: "2025-07-13T11:45:00",
     participants: null,
-    image: "https://via.placeholder.com/300x180?text=Snapchat+Hiring",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFIvYNw_R2cdpdhutWNWltMvz8QE2uidDXLA&s",
   },
   {
     id: 11,
@@ -101,7 +99,7 @@ export const upcomingChallenges = [
     title: "Azure AI Hiring Quest",
     startTime: "2025-07-14T14:00:00",
     participants: null,
-    image: "https://via.placeholder.com/300x180?text=Azure+Hiring",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbB0wdDVUPFuTemPeX5koN1-IX6TABlvdXKw&s",
   },
   {
     id: 12,
@@ -110,7 +108,7 @@ export const upcomingChallenges = [
     title: "Social AR Dev Challenge",
     startTime: "2025-07-15T09:00:00",
     participants: 800,
-    image: "https://via.placeholder.com/300x180?text=Meta+AR",
+    image: "https://d1krbhyfejrtpz.cloudfront.net/blog/wp-content/uploads/2021/11/07142219/Featured-Image.jpg",
   }
 ];
 
@@ -122,7 +120,7 @@ export const previousChallenges = [
     title: "TCS Digital Hiring Challenge",
     endTime: "2025-06-25T10:00:00",
     participants: 1200,
-    image: "https://via.placeholder.com/300x180?text=TCS+Digital",
+    image: "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20220711155832/digital-hiring.jpg",
   },
   {
     id: 14,
@@ -131,7 +129,7 @@ export const previousChallenges = [
     title: "Infosys Code Sprint",
     endTime: "2025-06-27T15:00:00",
     participants: 1100,
-    image: "https://via.placeholder.com/300x180?text=Infosys+Hiring",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS95Z4YVYbM6SAVHtlkuUqaFnyVFoQG54p-7A&s",
   },
   {
     id: 15,
@@ -140,7 +138,7 @@ export const previousChallenges = [
     title: "Wipro Innovation Bootcamp",
     endTime: "2025-06-26T19:00:00",
     participants: 1050,
-    image: "https://via.placeholder.com/300x180?text=Wipro+Bootcamp",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0hpAlROwVo8GyK1av9rv5GCRlsxa5qx0N8Q&s",
   },
   {
     id: 16,
@@ -149,7 +147,7 @@ export const previousChallenges = [
     title: "Tech Vision Hack 2025",
     endTime: "2025-06-29T20:00:00",
     participants: 950,
-    image: "https://via.placeholder.com/300x180?text=Accenture+Hack",
+    image: "https://lh3.googleusercontent.com/fI7sOLNJLBlSCRt6tj7VK3m8RGQ8SYphBfon8o4NfatBD4gztc5MZncWe-cJm6uKZ_Y1DkGfb2myTb4CsSFQc7XE5D5fY4GuEmc=s0",
   },
   {
     id: 17,
@@ -158,7 +156,7 @@ export const previousChallenges = [
     title: "AI Assistant Challenge",
     endTime: "2025-06-28T20:00:00",
     participants: 980,
-    image: "https://via.placeholder.com/300x180?text=OpenAI+Hack",
+    image: "https://www.signitysolutions.com/hubfs/Enterprise%20AI%20Assistant%20Challenges%20%20%282%29.png",
   },
   {
     id: 18,
@@ -167,6 +165,6 @@ export const previousChallenges = [
     title: "Open Source Dev Challenge",
     endTime: "2025-06-30T19:00:00",
     participants: 760,
-    image: "https://via.placeholder.com/300x180?text=RedHat+Dev",
+    image: "https://refine-web.imgix.net/hackathon-2/hackathon_cover.png?w=1788",
   }
 ];

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { MdKeyboardArrowDown } from 'react-icons/md';
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 const dropdownData = [
   {
@@ -53,37 +53,31 @@ const Navbar = ({ onStudentLoginClick }) => {
             </button>
             {openIndex === index && (
               <div className="absolute top-full mt-2 w-56 bg-white text-black rounded shadow-lg py-2 z-50">
-                {menu.items.map((item, i) => (
-                  <a
-                    key={i}
-                    href="#"
-                    className="block px-4 py-2 hover:bg-gray-100 text-sm"
-                  >
-                    {item}
-                  </a>
-                ))}
-              </div>
+              {menu.items.map((item, i) => (
+                <a
+                  key={i}
+                  href="#"
+                  className="block px-4 py-2 hover:bg-gray-100 text-sm"
+                >
+                  {item}
+                </a>
+              ))}
+            </div>
             )}
           </div>
         ))}
       </div>
 
-      <div className="flex items-center space-x-4 text-sm text-gray-700">
-        <a href="#" className="hover:text-black">For Recruiters</a>
-        <span className="hidden md:inline">|</span>
-        <a
-          href="#"
-          onClick={(e) => {
-            e.preventDefault();
-            onStudentLoginClick(); // call the passed prop
-          }}
-          className="hover:text-black"
-        >
-          Log In
-        </a>
+      <div className="flex items-center gap-4 text-sm text-gray-700">
+      <li className="block px-4 py-2 hover:bg-gray-100 text-sm list-none">
+  <Link to="/recruiter">For Recruiters</Link>
+</li>
+        
+        <button onClick={onStudentLoginClick} className="hover:bg-gray-800 hover:text-white border border-gray-300 text-md px-7 py-2 rounded cursor-pointer">Log In</button>
+
         <button
           onClick={() => navigate("/coding")}
-          className="bg-black text-white px-4 py-1 rounded hover:bg-gray-800 font-semibold"
+          className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800 font-semibold cursor-pointer"
         >
           Get Started
         </button>
