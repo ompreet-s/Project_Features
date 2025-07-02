@@ -28,7 +28,9 @@ const Navbar = () => {
             COURSES
           </button>
 
-          <a href="#">LEARNING</a>
+          <button onClick={() => navigate("/learning")} className="hover:text-orange-400">
+          LEARNING
+        </button>
         </div>
 
         <div className="flex space-x-4 items-center">

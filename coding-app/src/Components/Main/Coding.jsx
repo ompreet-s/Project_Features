@@ -1,6 +1,6 @@
 import React from "react";
-import CodingNavbar from "./CodingNavbar"; 
-import HackathonPage from "./Hackthon";
+import CodingNavbar from "./CodingNavbar";
+import HackathonPage from "./Hackthon"; 
 
 const Coding = () => {
   return (
