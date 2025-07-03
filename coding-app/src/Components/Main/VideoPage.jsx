@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { learningCourses } from './LearningData';
+import { learningCourses } from './learningData';
 
 const VideoPage = () => {
   const { id } = useParams();

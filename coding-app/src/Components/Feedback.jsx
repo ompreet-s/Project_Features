@@ -30,7 +30,7 @@ const Feedback = () => {
   };
 
   return (
-    <div className="bg-gray-100 py-10 px-6">
+    <div className="bg-gray-100 py-0 px-6">
       <div className="max-w-6xl mx-auto flex flex-row  items-center gap-10">
         <form onSubmit={handleSubmit} className="bg-white p-6 rounded-md shadow-md w-full md:w-1/2">
           <h2 className="text-2xl font-bold mb-4 text-gray-800">Leave Your Feedback</h2>

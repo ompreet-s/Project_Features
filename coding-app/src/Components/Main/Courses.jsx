@@ -12,7 +12,7 @@ const Course = () => {
 
   const navigate = useNavigate();
 
-  // Load saved cart when page opens
+  
   useEffect(() => {
     const stored = localStorage.getItem("cartItems");
     if (stored) {
@@ -20,7 +20,7 @@ const Course = () => {
     }
   }, []);
 
-  // Add course to cart
+
   const addToCart = (course) => {
     let alreadyAdded = false;
 
@@ -38,7 +38,7 @@ const Course = () => {
     }
   };
 
-  // Filter toggler without spread operator
+ 
   const handleFilter = (category, value) => {
     let updated = [];
 
@@ -49,7 +49,7 @@ const Course = () => {
     }
 
     if (updated.length === filters[category].length) {
-      updated.push(value); // add if not present
+      updated.push(value);
     }
 
     const newFilters = {
@@ -62,7 +62,7 @@ const Course = () => {
     setFilters(newFilters);
   };
 
-  // Check if course passes filters
+
   const isCourseVisible = (course) => {
     const fieldMatch = filters.field.length === 0 || filters.field.includes(course.field);
 

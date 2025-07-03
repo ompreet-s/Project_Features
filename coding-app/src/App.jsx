@@ -9,6 +9,10 @@ import Learning from "./Components/Main/Learning";
 import VideoPage from "./Components/Main/VideoPage";
 import Recruiter from "./Components/Recruiter";
 import "./App.css"
+import Product from "./Components/Product";
+import Team from "./Components/Team"
+import Features from "./Components/Features";
+import Collaborate from "./Components/Collaborate";
 
 const App = () => {
   return (
@@ -22,6 +26,10 @@ const App = () => {
           <Route path="/learning" element={<Learning />} />
           <Route path="/learning/:id" element={<VideoPage />} />
           <Route path="/recruiter" element={<Recruiter />} />
+          <Route path="/product" element={<Product />} />
+          <Route path="/about" element={<Team />} />
+          <Route path="/features" element={<Features/>} />
+          <Route path="/collaborate" element={<Collaborate/>} />
         </Routes>
         <Footer />
       </div>

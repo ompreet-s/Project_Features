@@ -22,7 +22,7 @@ const Testimonials = () => {
   }, []);
 
   return (
-    <section className="bg-[#f8f9fb] px-30 py-10">
+    <section className="bg-[#f7f8ff] px-30 py-10">
       <p className="text-sm font-semibold text-purple-600 uppercase mb-2">Testimonials</p>
       <h2 className="text-3xl font-bold text-gray-900 mb-2">What our clients are saying</h2>
       <p className="text-gray-700 mb-6">

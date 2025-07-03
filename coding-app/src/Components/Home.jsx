@@ -7,6 +7,9 @@ import Collaborate from "./Collaborate";
 import Feedback from "./Feedback";
 import StudentLoginModal from './StudentLogin';
 import Recruiter from './Recruiter';
+import Product from './Product';
+import Team from './Team';
+import Features from './Features';
 
 const Home = () => {
   const [showStudentModal, setShowStudentModal] = useState(false);
@@ -19,10 +22,12 @@ const Home = () => {
       />
       <UsersSection />
       <Recruiter/>
+      <Product/>
+      <Features/>
       <Testimonials />
       <Collaborate />
       <Feedback />
-
+      <Team/>
       {showStudentModal && (
         <StudentLoginModal onClose={() => setShowStudentModal(false)} />
       )}

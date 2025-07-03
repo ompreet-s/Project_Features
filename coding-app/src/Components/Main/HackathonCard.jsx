@@ -46,9 +46,9 @@ const HackathonCard = ({ challenge }) => {
           </h3>
           <div className="flex items-center justify-between mt-2 text-sm text-gray-600">
             {challenge.participants !== null ? (
-              <span>👥 {challenge.participants}</span>
+              <span>Enrolled: {challenge.participants}</span>
             ) : (
-              <span>🎯 Hiring</span>
+              <span> Hiring</span>
             )}
             {challenge.endTime && <span>Ends in: {timeLeft}</span>}
           </div>

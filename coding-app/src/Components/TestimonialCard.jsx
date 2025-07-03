@@ -2,10 +2,10 @@ import React from "react";
 
 const TestimonialCard = ({ name, review, rating }) => {
   return (
-    <div className="bg-white p-4 rounded-md border shadow-sm w-64 shrink-0">
-      <h3 className="font-semibold text-gray-900 mb-1">{name}</h3>
-      <p className="text-sm text-gray-500 mb-1">Rating: {rating}/5</p>
-      <p className="text-sm text-gray-600">{review}</p>
+    <div className=" bg-gradient-to-r from-[#fdfbfb] via-[#ebedee] to-[#dfe9f3] p-6 rounded-lg border border-gray-200 shadow-lg w-72 shrink-0 transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl">
+      <h3 className="text-lg font-semibold text-black-800 mb-2">{name}</h3>
+      <p className="text-sm text-yellow-600 mb-2">Rating: {rating}/5</p>
+      <p className="text-sm text-gray-700">{review}</p>
     </div>
   );
 };

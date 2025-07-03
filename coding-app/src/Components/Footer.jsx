@@ -1,5 +1,6 @@
 import React from "react";
 import { FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
   return (
@@ -82,7 +83,12 @@ const Footer = () => {
             <p className="font-semibold text-white mb-1 text-lg">Address</p>
             <p>CodeBridge HQ</p>
             <p>Bhubaneshwar,Odisha, India</p>
-            <p>Email: support@codebridge.com</p>
+            <div className="flex items-center gap-2 mt-8 text-gray-700 text-sm">
+              <MdEmail className="text-lg text-blue-600" />
+              <a href="mailto:support@codebridge.com" className="hover:underline hover:text-blue-700 text-white font-medium">
+                Email us at support@codebridge.com for any queries
+                </a>
+            </div>
           </div>
 
          
