@@ -39,12 +39,12 @@ const Navbar = ({ onStudentLoginClick }) => {
         <span className="text-black">CodeBridge</span>
       </div>
 
-      <div className="hidden md:flex items-center space-x-6 text-sm font-medium text-gray-700">
+      <div className="flex  items-center gap-15 m-auto text-sm font-medium text-gray-700">
         {dropdownData.map((menu, index) => (
           <div
             key={index}
             className="relative"
-            onMouseEnter={() => setOpenIndex(index)}
+            onClick={() => setOpenIndex(index)}
             onMouseLeave={() => setOpenIndex(null)}
           >
             <button className="flex items-center gap-1 hover:text-black">
@@ -52,12 +52,12 @@ const Navbar = ({ onStudentLoginClick }) => {
               <MdKeyboardArrowDown />
             </button>
             {openIndex === index && (
-              <div className="absolute top-full mt-2 w-56 bg-white text-black rounded shadow-lg py-2 z-50">
+              <div className="absolute top-full mt-2 w-40 bg-white text-black rounded shadow-lg py-2 z-50">
               {menu.items.map((item, i) => (
                 <a
                   key={i}
                   href="#"
-                  className="block px-4 py-2 hover:bg-gray-100 text-sm"
+                  className="block px-4 py-2 hover:bg-gray-100 hover:text-black text-sm border-t-1 border-gray-200 text-gray-600"
                 >
                   {item}
                 </a>

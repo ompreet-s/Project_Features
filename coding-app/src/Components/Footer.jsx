@@ -9,11 +9,11 @@ const Footer = () => {
         <div className="flex  justify-between gap-10 pb-14 border-b border-gray-700">
         
           <div className="w-[300px]">
-          <div className="flex items-center space-x-2 font-bold text-xl">
+          <div className="flex items-center  font-bold text-xl">
         <span className="bg-white text-black px-2 py-1 rounded">C</span>
         <span className="text-white">CodeBridge</span>
       </div>
-          <p className="text-sm text-gray-300 leading-relaxed">
+          <p className="text-md text-gray-300 mt-5">
             Streamline your journey into tech with challenges, learning paths,
             and industry-level assessments—all from one platform.
           </p>
@@ -24,8 +24,8 @@ const Footer = () => {
             <div className="grid grid-cols-5 gap-10">
               
               <div>
-                <h4 className="font-semibold mb-2 text-white"><a href="#">Products</a></h4>
-                <ul className="text-sm text-gray-300 space-y-1">
+                <h4 className="font-semibold mb-5 text-white"><a href="#">Products</a></h4>
+                <ul className="text-md text-gray-300 flex flex-col gap-3">
                   <li><a href="#">Assessments</a></li>
                   <li><a href="#">FaceCode</a></li>
                   <li><a href="#">Hackathons</a></li>
@@ -34,8 +34,8 @@ const Footer = () => {
 
               
               <div>
-                <h4 className="font-semibold mb-2 text-white"><a href="#">Features</a></h4>
-                <ul className="text-sm text-gray-300 space-y-1">
+                <h4 className="font-semibold mb-5 text-white"><a href="#">Features</a></h4>
+                <ul className="text-md text-gray-300 flex flex-col gap-3">
                   <li><a href="#">Proctoring</a></li>
                   <li><a href="#">Analytics</a></li>
                   <li><a href="#">Reports</a></li>
@@ -44,8 +44,8 @@ const Footer = () => {
 
              
               <div>
-                <h4 className="font-semibold mb-2 text-white"><a href="#">Solutions</a></h4>
-                <ul className="text-sm text-gray-300 space-y-1">
+                <h4 className="font-semibold mb-5 text-white"><a href="#">Solutions</a></h4>
+                <ul className="text-md text-gray-300 flex flex-col gap-3">
                   <li><a href="#">Students</a></li>
                   <li><a href="#">Recruiters</a></li>
                   <li><a href="#">Colleges</a></li>
@@ -54,8 +54,8 @@ const Footer = () => {
 
               
               <div>
-                <h4 className="font-semibold mb-2 text-white"><a href="#">Resources</a></h4>
-                <ul className="text-sm text-gray-300 space-y-1">
+                <h4 className="font-semibold mb-5 text-white"><a href="#">Resources</a></h4>
+                <ul className="text-md text-gray-300 flex flex-col gap-3">
                   <li><a href="#">Blogs</a></li>
                   <li><a href="#">Guides</a></li>
                   <li><a href="#">Webinars</a></li>
@@ -79,17 +79,17 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 mt-8">
           
           <div className="text-sm text-gray-300">
-            <p className="font-semibold text-white mb-1">Address</p>
+            <p className="font-semibold text-white mb-1 text-lg">Address</p>
             <p>CodeBridge HQ</p>
-            <p>New Delhi, India</p>
+            <p>Bhubaneshwar,Odisha, India</p>
             <p>Email: support@codebridge.com</p>
           </div>
 
          
-          <div className="flex gap-4">
-            <a href="#" className="text-gray-300 hover:text-white text-lg"><FaInstagram /></a>
-            <a href="#" className="text-gray-300 hover:text-white text-lg"><FaLinkedin /></a>
-            <a href="#" className="text-gray-300 hover:text-white text-lg"><FaTwitter /></a>
+          <div className="flex gap-7">
+            <a href="#" className="text-gray-300 hover:text-white text-3xl"><FaInstagram /></a>
+            <a href="#" className="text-gray-300 hover:text-white text-3xl"><FaLinkedin /></a>
+            <a href="#" className="text-gray-300 hover:text-white text-3xl"><FaTwitter /></a>
           </div>
         </div>
 
