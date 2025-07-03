@@ -107,7 +107,7 @@ const Navbar = ({ onStudentLoginClick }) => {
         </button>
 
         <button
-          onClick={() => navigate("/coding")}
+          onClick={onStudentLoginClick}
           className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800 font-semibold cursor-pointer"
         >
           Get Started

@@ -56,11 +56,15 @@ const Testimonials = () => {
 
   const handleScroll = (dir) => {
     const scrollAmount = 320;
-    scrollRef.current?.scrollBy({
-      left: dir === "left" ? -scrollAmount : scrollAmount,
-      behavior: "smooth",
-    });
+  
+    if (scrollRef.current) {
+      scrollRef.current.scrollBy({
+        left: dir === "left" ? -scrollAmount : scrollAmount,
+        behavior: "smooth",
+      });
+    }
   };
+  
 
   useEffect(() => {
     axios

@@ -17,7 +17,7 @@ const Learning = () => {
       <LearningNavbar />
       <h1 className='m-auto text-5xl text-center mt-5 mb-5'>Watch Free Learning Videos</h1>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-6">
+      <div className="grid grid-cols-3  gap-6 p-6">
         {learningCourses.map(course => (
           <LearningCard
             key={course.id}

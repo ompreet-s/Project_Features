@@ -1,5 +1,6 @@
 import React from "react";
 import { FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
@@ -93,9 +94,9 @@ const Footer = () => {
 
          
           <div className="flex gap-7">
-            <a href="#" className="text-gray-300 hover:text-white text-3xl"><FaInstagram /></a>
-            <a href="#" className="text-gray-300 hover:text-white text-3xl"><FaLinkedin /></a>
-            <a href="#" className="text-gray-300 hover:text-white text-3xl"><FaTwitter /></a>
+            <a href="https://www.instagram.com/" target="_blank" className="text-gray-300 hover:text-white text-3xl"><FaInstagram /></a>
+            <a href="https://www.linkedin.com/" target="_blank" className="text-gray-300 hover:text-white text-3xl"><FaLinkedin /></a>
+            <a href="https://x.com/" target="_blank" className="text-gray-300 hover:text-white text-3xl"><FaXTwitter /></a>
           </div>
         </div>
 
