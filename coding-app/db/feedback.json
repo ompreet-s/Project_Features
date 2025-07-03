@@ -41,7 +41,12 @@
       "name": "Maya R.",
       "review": "A perfect tool for both recruiting and upskilling. We loved the UI and simplicity of workflow.",
       "rating": "5"
+    },
+    {
+      "id": "74bf",
+      "name": "supreet",
+      "review": "I have used HackerEarth starting 2013. This was during a time that codeforces, kattis, codechef, l33tcode and similar online judges were the rave of all programmers...",
+      "rating": "5"
     }
-    
   ]
 }

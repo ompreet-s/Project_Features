@@ -3,6 +3,53 @@ import axios from "axios";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import TestimonialCard from "./TestimonialCard";
 
+
+const fallbackTestimonials = [
+  {
+    name: "Ananya U.",
+    review:
+      "Helped us in better screening at the start of the hiring process; thus helping our internal team to interview the best of best folks.",
+    rating: "5",
+  },
+  {
+    name: "Neeraj K.",
+    review:
+      "I was given the HackerEarth assessments by various companies as the first round of shortlisting. Great experience!",
+    rating: "4",
+  },
+  {
+    name: "Ram P.",
+    review:
+      "CodeBridge helped streamline our tech hiring process significantly with real-time assessments.",
+    rating: "5",
+  },
+  {
+    name: "Krishna P.",
+    review:
+      "CodeBridge helped streamline our tech hiring process significantly with real-time assessments.",
+    rating: "5",
+  },
+  {
+    name: "Radha P.",
+    review:
+      "CodeBridge helped streamline our tech hiring process significantly with real-time assessments.",
+    rating: "5",
+  },
+  {
+    name: "Sundar P.",
+    review:
+      "CodeBridge helped streamline our tech hiring process significantly with real-time assessments.",
+    rating: "5",
+  },
+  {
+    name: "Guest P.",
+    review:
+      "CodeBridge helped streamline our tech hiring process significantly with real-time assessments.",
+    rating: "5",
+  },
+  
+];
+
 const Testimonials = () => {
   const scrollRef = useRef(null);
   const [feedbackList, setFeedbackList] = useState([]);
@@ -16,13 +63,23 @@ const Testimonials = () => {
   };
 
   useEffect(() => {
-    axios.get("http://localhost:5001/feedback")
-      .then(res => setFeedbackList(res.data))
-      .catch(err => console.error("GET Error:", err));
+    axios
+      .get("http://localhost:5001/feedback")
+      .then((res) => {
+        if (res.data && res.data.length > 0) {
+          setFeedbackList(res.data);
+        } else {
+          setFeedbackList(fallbackTestimonials);
+        }
+      })
+      .catch((err) => {
+        console.error("GET Error:", err);
+        setFeedbackList(fallbackTestimonials);
+      });
   }, []);
 
   return (
-    <section className="bg-[#f7f8ff] px-30 py-10">
+    <div className="bg-[#f7f8ff] px-30 py-10">
       <p className="text-sm font-semibold text-purple-600 uppercase mb-2">Testimonials</p>
       <h2 className="text-3xl font-bold text-gray-900 mb-2">What our clients are saying</h2>
       <p className="text-gray-700 mb-6">
@@ -48,7 +105,7 @@ const Testimonials = () => {
           />
         ))}
       </div>
-    </section>
+    </div>
   );
 };
 
