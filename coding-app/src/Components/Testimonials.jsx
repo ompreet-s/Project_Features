@@ -14,7 +14,7 @@ const fallbackTestimonials = [
   {
     name: "Neeraj K.",
     review:
-      "I was given the HackerEarth assessments by various companies as the first round of shortlisting. Great experience!",
+      "I was given the CodeBridge assessments by various companies as the first round of shortlisting. Great experience!",
     rating: "4",
   },
   {
@@ -83,14 +83,14 @@ const Testimonials = () => {
   }, []);
 
   return (
-    <div className="bg-[#f7f8ff] px-30 py-10">
-      <p className="text-sm font-semibold text-purple-600 uppercase mb-2">Testimonials</p>
+    <div className="bg-[#f7f8ff] px-30 py-10 max-md:px-10 max-lg:px-10 max-xl:px-15">
+      <p className="text-lg font-semibold text-purple-600 uppercase mb-2">Testimonials</p>
       <h2 className="text-3xl font-bold text-gray-900 mb-2">What our clients are saying</h2>
-      <p className="text-gray-700 mb-6">
-        <a href="#" className="underline font-medium">Hundreds of reviews</a> showcase why users trust CodeBridge.
+      <p className="text-gray-700 mb-6 max-sm:mb-3">
+        <a href="" className="underline font-medium">Hundreds of reviews</a> showcase why users trust CodeBridge.
       </p>
 
-      <div className="flex justify-end gap-3 mb-6">
+      <div className="flex justify-end gap-3 mb-6 max-sm:mb-4">
         <button onClick={() => handleScroll("left")} className="w-10 h-10 rounded-full border flex items-center justify-center hover:bg-gray-100">
           <FaArrowLeft />
         </button>

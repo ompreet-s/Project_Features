@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import { useNavigate } from 'react-router-dom';
 import { learningCourses } from './learningData';
 import LearningNavbar from './LearningNavbar';
@@ -8,6 +8,10 @@ import { MdSubscriptions } from 'react-icons/md';
 const Learning = () => {
   const navigate = useNavigate();
 
+  useEffect(() => {
+      window.scrollTo(0, 0); 
+    }, []);
+
   const handleSubscribe = () => {
     alert("🎉 Thank you for subscribing to our learning platform!");
   };
@@ -15,9 +19,9 @@ const Learning = () => {
   return (
     <div>
       <LearningNavbar />
-      <h1 className='m-auto text-5xl text-center mt-5 mb-5'>Watch Free Learning Videos</h1>
+      <h1 className='m-auto text-5xl text-center mt-5 mb-5 max-sm:text-xl max-sm:mb-3'>Watch Free Learning Videos</h1>
 
-      <div className="grid grid-cols-3  gap-6 p-6">
+      <div className="grid grid-cols-3 max-sm:grid-cols-1 max-md:grid-cols-2 gap-6 p-6">
         {learningCourses.map(course => (
           <LearningCard
             key={course.id}

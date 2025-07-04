@@ -42,7 +42,7 @@ const Hero = ({ onStudentClick }) => {
   };
 
   return (
-    <div className="relative w-full h-[90vh] text-white text-center overflow-hidden">
+    <div className="relative w-full h-[90vh] max-sm:h-[50vh] max-md:h-[60vh]   max-xl:h-[70vh] max-2xl:h-[60vh] text-white text-center overflow-hidden">
 
       <img
         src={images[currentIndex]}
@@ -53,32 +53,32 @@ const Hero = ({ onStudentClick }) => {
 
       <div className="absolute "></div>
 
-      <div className="relative  py-30 px-6">
-        <h1 className="text-6xl  font-bold leading-tight mb-10">
+      <div className="relative max-sm:py-10 max-md:py-20 max-lg:py-20 py-30 px-6">
+        <h1 className="text-6xl max-sm:text-lg max-md:text-2xl max-lg:text-3xl  max-xl:text-5xl font-bold max-sm:mb-3 mb-10 leading-tight">
           Find and engage top talent by evaluating<br />
           technical and soft skills
         </h1>
-        <p className="text-xl  mb-10 max-w-3xl mx-auto">
+        <p className="text-xl  mb-10 max-w-3xl  max-sm:text-sm max-md:max-w-xl max-lg:max-w-xl max-lg:text-lg max-xl:text-3xl mx-auto ">
           Empower your tech hiring with LearnX’s trusted platform offering skill assessments, competitions,
           and access to a student learning community.
         </p>
-        <div className="flex justify-center">
+        <div className="flex justify-center ">
           <button
             onClick={onStudentClick}
-            className="border border-white text-white px-6 py-2 rounded hover:bg-white hover:text-purple-800"
+            className="border border-white text-white max-sm:px-6 max-sm:py-3 px-6 py-2 rounded hover:bg-white hover:text-purple-800 max-xl:py-5 max-xl:px-10  max-lg:px-10 max-lg:py-3 max-2xl:px-10 max-2xl:py-5"
           >
             For Students/Jobseekers
           </button>
         </div>
       </div>
 
-      <div className="absolute left-5 top-[50%] transform -translate-y-[50%] ">
-        <button onClick={goToPrev} className="bg-black p-5 rounded-full hover:bg-black cursor-pointer">
+      <div className="absolute left-3 top-[50%] transform -translate-y-[50%] ">
+        <button onClick={goToPrev} className="bg-black/50 p-5 rounded-full hover:bg-black cursor-pointer max-sm:p-2 max-md:p-3">
           <FaArrowLeft />
         </button>
       </div>
-      <div className="absolute right-5 top-[50%] transform -translate-y-[50%] ">
-        <button onClick={goToNext} className="bg-black p-5 rounded-full hover:bg-black cursor-pointer">
+      <div className="absolute right-3 top-[50%] transform -translate-y-[50%] ">
+        <button onClick={goToNext} className="bg-black/50 p-5 rounded-full hover:bg-black cursor-pointer max-sm:p-2 max-md:p-3">
           <FaArrowRight />
         </button>
       </div>

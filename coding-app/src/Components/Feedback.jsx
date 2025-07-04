@@ -30,10 +30,10 @@ const Feedback = () => {
   };
 
   return (
-    <div className="bg-gray-100 py-0 px-6">
+    <div className="bg-gray-100 py-10 px-6 max-md:py-10 max-lg:py-10">
       <div className="max-w-6xl mx-auto flex flex-row  items-center gap-10">
-        <form onSubmit={handleSubmit} className="bg-white p-6 rounded-md shadow-md w-1/2 ">
-          <h2 className="text-2xl font-bold mb-4 text-gray-800">Leave Your Feedback</h2>
+        <form onSubmit={handleSubmit} className="bg-white p-6 rounded-md shadow-md w-1/2 max-md:w-md max-lg:w-lg max-xl:w-xl">
+          <h2 className="text-2xl font-bold mb-4 text-gray-800 max-sm:text-xl">Leave Your Feedback</h2>
           <input
             type="text"
             placeholder="Your Name"
@@ -66,7 +66,7 @@ const Feedback = () => {
           {success && <p className="text-green-600 mt-2">Thanks for your feedback!</p>}
         </form>
 
-        <div className="w-lg h-m">
+        <div className="w-lg h-md max-md:w-sm max-md:h-sm max-sm:hidden max-lg:w-md max-lg:h-md max-xl:h-lg max-xl:w-lg">
           <img src={image} alt="Feedback" className="w-full h-full object-cover" />
         </div>
       </div>

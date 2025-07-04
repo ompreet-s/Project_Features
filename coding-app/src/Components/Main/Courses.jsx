@@ -4,6 +4,7 @@ import CourseCard from './CourseCard';
 import Sidebar from './Sidebar';
 import { coursesData } from './data';
 import { useNavigate } from 'react-router-dom';
+import { FaHome, FaFilter, FaShoppingCart } from 'react-icons/fa';
 
 const Course = () => {
   const [cartItems, setCartItems] = useState([]);
@@ -12,14 +13,16 @@ const Course = () => {
 
   const navigate = useNavigate();
 
-  
+  useEffect(() => {
+      window.scrollTo(0, 0); 
+    }, []);
+
   useEffect(() => {
     const stored = localStorage.getItem("cartItems");
     if (stored) {
       setCartItems(JSON.parse(stored));
     }
   }, []);
-
 
   const addToCart = (course) => {
     let alreadyAdded = false;
@@ -38,7 +41,6 @@ const Course = () => {
     }
   };
 
- 
   const handleFilter = (category, value) => {
     let updated = [];
 
@@ -61,7 +63,6 @@ const Course = () => {
     newFilters[category] = updated;
     setFilters(newFilters);
   };
-
 
   const isCourseVisible = (course) => {
     const fieldMatch = filters.field.length === 0 || filters.field.includes(course.field);
@@ -102,23 +103,53 @@ const Course = () => {
   const visibleCourses = coursesData.filter(isCourseVisible);
 
   return (
-    <div className="min-h-screen bg-[#f8f9fb]">
+    <div className="min-h-screen bg-[#f8f9fb] relative">
       <CourseNavbar
-        cartCount={cartItems.length}
         toggleSidebar={() => setShowSidebar(!showSidebar)}
-        onCartClick={() => navigate("/cart")}
       />
 
-      <div className="flex">
+      <div className="flex relative">
         {showSidebar && (
-          <Sidebar filters={filters} toggleFilter={handleFilter} />
+          <div className="fixed inset-0 bg-white w-64 h-full z-50 shadow-lg max-sm:block">
+            <Sidebar filters={filters} toggleFilter={handleFilter} />
+          </div>
         )}
 
-        <div className="grid grid-cols-3 gap-10 p-6 m-auto">
+        <div className="grid grid-cols-3 gap-10 p-6 m-auto max-sm:grid-cols-1 max-md:grid-cols-2 max-lg:grid-cols-2 max-2xl:grid-cols-4">
           {visibleCourses.map((course) => (
             <CourseCard key={course.id} course={course} onEnroll={addToCart} />
           ))}
         </div>
+      </div>
+
+      
+      <div className="fixed bottom-0 left-0 right-0 bg-[#2d3150] border-t shadow-md p-2 hidden justify-around items-center max-sm:flex z-50 ">
+        <button
+          className="flex flex-col items-center text-sm text-white"
+          onClick={() => navigate("/coding")}
+        >
+          <FaHome className="text-lg" />
+          Home
+        </button>
+        <button
+          className="relative flex flex-col items-center text-sm text-white"
+          onClick={() => navigate("/cart")}
+        >
+          <FaShoppingCart className="text-lg" />
+          Cart
+          {cartItems.length > 0 && (
+            <span className="absolute top-0 right-2 bg-red-500 text-white text-xs px-1 rounded-full">
+              {cartItems.length}
+            </span>
+          )}
+        </button>
+        <button
+          className="flex flex-col items-center text-sm text-white"
+          onClick={() => setShowSidebar(!showSidebar)}
+        >
+          <FaFilter className="text-lg" />
+          Filter
+        </button>
       </div>
     </div>
   );

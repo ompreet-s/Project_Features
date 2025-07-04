@@ -57,22 +57,22 @@ const Product = () => {
   return (
     <div className="bg-gray-100 p-6">
       <h2 className="text-2xl font-bold mb-6 text-center">💼 Our Offerings</h2>
-      <div className="flex flex-wrap gap-6 justify-center items-start">
+      <div className="flex flex-wrap gap-6 justify-center items-start max-md:flex-col max-lg:flex-col  ">
         {data.map((section) => (
-          <div key={section.id} className="bg-white p-5 rounded shadow w-[48%]">
-            <div className="flex gap-4">
+          <div key={section.id} className="bg-white p-5 rounded shadow w-[48%] max-md:w-full max-lg:w-full ">
+            <div className="flex gap-7 max-sm:flex-col">
               <img src={section.icon} alt={section.title} className="w-20 h-20" />
               <div>
-                <h3 className="text-xl font-bold">{section.title}</h3>
-                <p className="text-gray-600">{section.desc}</p>
-                <ul className="list-disc pl-5 mt-2 text-gray-700 text-sm">
+                <h3 className="text-xl font-bold mb-2">{section.title}</h3>
+                <p className="text-gray-600 text-xl mb-4">{section.desc}</p>
+                <ul className="list-disc pl-5 mt-2 text-gray-700 text-lg">
                   {section.points.map((pt, i) => (
                     <li key={i}>{pt}</li>
                   ))}
                 </ul>
                 <button
                   onClick={() => handleToggle(section.id)}
-                  className="mt-4 px-4 py-2 bg-blue-600 text-white rounded"
+                  className="mt-4 px-4 py-2 bg-blue-600 text-white rounded max-sm:w-[200px]"
                 >
                   {openId === section.id ? "Hide Details" : `Explore ${section.title}`}
                 </button>
@@ -82,14 +82,14 @@ const Product = () => {
             {openId === section.id && (
               <div className="mt-4 border-t pt-4">
                 <h4 className="text-blue-700 font-semibold mb-2">Details:</h4>
-                <div className="flex gap-3">
+                <div className="flex gap-3 max-sm:flex-col ">
                   {section.details.map((item, idx) => (
                     <div
                       key={idx}
-                      className="bg-gray-100 p-3 rounded cursor-pointer hover:bg-blue-50 transition"
+                      className="bg-gray-100 p-3 rounded cursor-pointer  hover:bg-blue-50 transition"
                       onClick={handleCardClick}
                     >
-                      <img src={item.img} alt={item.title} className="w-full h-40 object-cover rounded" />
+                      <img src={item.img} alt={item.title} className="w-full h-40  rounded" />
                       <h5 className="font-bold mt-2">{item.title}</h5>
                       <p className="text-sm text-gray-600">{item.date}</p>
                     </div>

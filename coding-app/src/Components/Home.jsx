@@ -17,17 +17,35 @@ const Home = () => {
   return (
     <div>
       <Navbar onStudentLoginClick={() => setShowStudentModal(true)} />
-      <Hero
-        onStudentClick={() => setShowStudentModal(true)}
-      />
+
+      <Hero onStudentClick={() => setShowStudentModal(true)} />
+
       <UsersSection />
-      <Recruiter/>
-      <Product/>
-      <Features/>
+
+      <div id="recruiter">
+        <Recruiter />
+      </div>
+
+      <div id="product">
+        <Product />
+      </div>
+
+      <div id="feature">
+        <Features />
+      </div>
+
       <Testimonials />
-      <Collaborate />
+
+      <div id="collaborate">
+        <Collaborate />
+      </div>
+
       <Feedback />
-      <Team/>
+
+      <div id="team">
+        <Team />
+      </div>
+
       {showStudentModal && (
         <StudentLoginModal onClose={() => setShowStudentModal(false)} />
       )}

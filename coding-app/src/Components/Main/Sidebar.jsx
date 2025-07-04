@@ -23,7 +23,7 @@ const Sidebar = ({ filters, toggleFilter }) => {
   );
 
   return (
-    <aside className="bg-white p-4 shadow-md w-64">
+    <aside className="bg-white p-4 h-screen w-64 z-50">
       <h3 className="text-lg font-bold mb-4">Filter Courses</h3>
       {renderCheckboxes("Field", fields, "field")}
       {renderCheckboxes("Price", prices, "price")}

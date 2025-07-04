@@ -8,9 +8,9 @@ const Footer = () => {
     <footer className="bg-[#1d1f2f] text-white pt-14 px-6">
       <div className="max-w-7xl mx-auto">
 
-        <div className="flex  justify-between gap-10 pb-14 border-b border-gray-700">
+        <div className="flex  justify-between gap-10 pb-14 border-b border-gray-700 max-md:gap-20 max-sm:flex-col max-sm:gap-7">
         
-          <div className="w-[300px]">
+          <div className="w-[300px] max-md:w-[500px] max-sm:w-[250px]">
           <div className="flex items-center  font-bold text-xl">
         <span className="bg-white text-black px-2 py-1 rounded">C</span>
         <span className="text-white">CodeBridge</span>
@@ -23,11 +23,11 @@ const Footer = () => {
 
         
          
-            <div className="grid grid-cols-5 gap-10">
+            <div className="grid grid-cols-5 gap-10 max-md:flex max-md:flex-wrap ">
               
               <div>
                 <h4 className="font-semibold mb-5 text-white"><a href="#">Products</a></h4>
-                <ul className="text-md text-gray-300 flex flex-col gap-3">
+                <ul className="text-md text-gray-300 flex flex-col gap-3  max-lg:text-sm">
                   <li><a href="#">Assessments</a></li>
                   <li><a href="#">FaceCode</a></li>
                   <li><a href="#">Hackathons</a></li>
@@ -37,7 +37,7 @@ const Footer = () => {
               
               <div>
                 <h4 className="font-semibold mb-5 text-white"><a href="#">Features</a></h4>
-                <ul className="text-md text-gray-300 flex flex-col gap-3">
+                <ul className="text-md text-gray-300 flex flex-col gap-3 max-lg:text-sm">
                   <li><a href="#">Proctoring</a></li>
                   <li><a href="#">Analytics</a></li>
                   <li><a href="#">Reports</a></li>
@@ -47,7 +47,7 @@ const Footer = () => {
              
               <div>
                 <h4 className="font-semibold mb-5 text-white"><a href="#">Solutions</a></h4>
-                <ul className="text-md text-gray-300 flex flex-col gap-3">
+                <ul className="text-md text-gray-300 flex flex-col gap-3  max-lg:text-sm">
                   <li><a href="#">Students</a></li>
                   <li><a href="#">Recruiters</a></li>
                   <li><a href="#">Colleges</a></li>
@@ -57,7 +57,7 @@ const Footer = () => {
               
               <div>
                 <h4 className="font-semibold mb-5 text-white"><a href="#">Resources</a></h4>
-                <ul className="text-md text-gray-300 flex flex-col gap-3">
+                <ul className="text-md text-gray-300 flex flex-col gap-3  max-lg:text-sm">
                   <li><a href="#">Blogs</a></li>
                   <li><a href="#">Guides</a></li>
                   <li><a href="#">Webinars</a></li>
@@ -67,7 +67,7 @@ const Footer = () => {
               
               <div>
                 <h4 className="font-semibold mb-5 text-white"><a href="">Company</a></h4>
-                <ul className="text-md text-gray-300 flex flex-col gap-3">
+                <ul className="text-md text-gray-300 flex flex-col gap-3  max-lg:text-sm">
                   <li><a href="#">About</a></li>
                   <li><a href="#">Careers</a></li>
                   <li><a href="#">Contact</a></li>
@@ -80,13 +80,13 @@ const Footer = () => {
         
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 mt-8">
           
-          <div className="text-sm text-gray-300">
+          <div className="text-md text-gray-300">
             <p className="font-semibold text-white mb-1 text-lg">Address</p>
             <p>CodeBridge HQ</p>
             <p>Bhubaneshwar,Odisha, India</p>
-            <div className="flex items-center gap-2 mt-8 text-gray-700 text-sm">
-              <MdEmail className="text-lg text-blue-600" />
-              <a href="mailto:support@codebridge.com" className="hover:underline hover:text-blue-700 text-white font-medium">
+            <div className="flex items-center gap-3 mt-8 text-gray-700 ">
+              <MdEmail className="text-lg text-blue-600 max-sm:text-5xl" />
+              <a href="mailto:support@codebridge.com" className="hover:underline hover:text-blue-700 text-white font-medium text-lg max-sm:text-sm">
                 Email us at support@codebridge.com for any queries
                 </a>
             </div>
