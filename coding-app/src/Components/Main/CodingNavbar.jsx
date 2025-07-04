@@ -9,34 +9,34 @@ const Navbar = () => {
   const handleToggle = () => setShowDropdown((prev) => !prev);
 
   return (
-    <>
+    <div>
       <nav className="bg-[#2d3150] text-white px-10 py-3 flex justify-between items-center">
        
-        <ul className="flex items-center space-x-6">
+        <ul className="flex items-center gap-7">
           <li>
-            <Link to="/" className="flex items-center gap-1 hover:text-orange-400 text-xl">
+            <Link to="/" className="flex items-center gap-1 hover:text-green-400 text-2xl">
               <FaHome />
               <span className='text-md'>Home</span>
             </Link>
           </li>
 
           <li>
-            <Link to="/coding" className="hover:text-orange-400">COMPETITION</Link>
+            <Link to="/coding" className="hover:text-green-400 text-xl">COMPETITION</Link>
           </li>
 
           <li>
-            <Link to="/courses" className="hover:text-orange-400">COURSES</Link>
+            <Link to="/courses" className="hover:text-green-400 text-xl">COURSES</Link>
           </li>
 
           <li>
-            <Link to="/learning" className="hover:text-orange-400">LEARNING</Link>
+            <Link to="/learning" className="hover:text-green-400 text-xl">LEARNING</Link>
           </li>
         </ul>
 
        
         <div className="relative">
           <button onClick={handleToggle}>
-            <FaUserCircle className="text-4xl cursor-pointer hover:text-orange-400" />
+            <FaUserCircle className="text-4xl cursor-pointer hover:text-green-400" />
           </button>
 
           {showDropdown && (
@@ -66,7 +66,7 @@ const Navbar = () => {
           )}
         </div>
       </nav>
-    </>
+    </div>
   );
 };
 

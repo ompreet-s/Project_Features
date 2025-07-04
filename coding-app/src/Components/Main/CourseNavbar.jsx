@@ -13,7 +13,7 @@ const CourseNavbar = ({ toggleSidebar }) => {
     const interval = setInterval(() => {
       const updated = JSON.parse(localStorage.getItem("cartItems")) || [];
       setCartCount(updated.length);
-    }, 3000); 
+    }, 300); 
 
     return () => clearInterval(interval);
   }, []);
